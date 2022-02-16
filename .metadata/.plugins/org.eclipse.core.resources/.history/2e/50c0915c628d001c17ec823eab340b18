@@ -1,0 +1,29 @@
+package com.selfstudy;
+
+public class nine {
+	
+	public static void main(String[] args) {
+		boolean gameover=true;
+		int score =10000;
+		int lcomp=8;
+		int bonus=200;
+		
+		int highscore= calscrmethod(true, score, lcomp, bonus);
+		System.out.println("final score is "+highscore);
+	}
+	
+	public static int calscrmethod(boolean gameover,int score,int lcomp,int bonus) {
+		
+		if(gameover) {
+			int finalscore=score+(lcomp*bonus);
+			finalscore+=1000;
+			
+			return finalscore;
+			
+		}
+		else {
+		return -1;
+		}
+	}
+	
+}

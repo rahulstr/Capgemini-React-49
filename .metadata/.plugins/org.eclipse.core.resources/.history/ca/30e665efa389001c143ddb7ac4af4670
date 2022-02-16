@@ -1,0 +1,33 @@
+package com.demo.tax;
+
+public class IncomeTaxCalculator {
+	
+	public static void main(String[] args) {
+
+		float basicpay=225000;
+		boolean citizenship=true;
+		
+		float incomeTax = 10*basicpay/100;
+		System.out.println("The Income Tax of the employee for the " +basicpay+ " is "+ incomeTax);
+		applyTax(incomeTax,basicpay);
+		Validatepay(incomeTax, citizenship);
+		
+
+	}
+	public static void applyTax(float incomeTax, float basicpay) {
+		float nettPay= basicpay -  incomeTax;
+		
+		System.out.println("The nett pay of the employee is "+ nettPay);
+	  }
+	public static void Validatepay(float basicpay, boolean citizenship) {
+		if(basicpay > 20000){
+			citizenship=true;			
+		}
+		else {
+			citizenship=false;
+		}
+		System.out.println("The salary and citizenship eligibility: "+ citizenship);
+		
+	}
+
+}

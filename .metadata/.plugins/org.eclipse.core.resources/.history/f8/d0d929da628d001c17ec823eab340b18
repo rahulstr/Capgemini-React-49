@@ -1,0 +1,40 @@
+package com.selfstudy;
+
+public class nine {
+	
+	public static void main(String[] args) {
+		String name="rahul";
+		int score;
+		
+		calculateHighScore(1500);
+		
+	}
+	
+	public static void displayHighScorePosition(String name,int position) {
+		
+		System.out.println(name+"managed to get into position"+position+"on the high score table");
+		
+	}
+	
+	public static int calculateHighScore(int score) {
+		
+		if (score>1000) {
+			int position=1;
+			return position;
+		}else if(score>500 && score<1000) {
+			int position=2;
+			return position;
+		}else if(score>100 && score<500) {
+			int position=3;
+			return position;
+		}else {
+			int position=4;
+			return position;
+		}
+		
+		
+	}
+	
+		
+}
+	

@@ -1,0 +1,12 @@
+package com.HandsOn;
+
+public class Strings {
+
+	public static void main(java.lang.String[] args) {
+		
+		String s="java";
+		
+		System.out.println();
+	}
+
+}

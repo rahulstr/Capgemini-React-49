@@ -1,0 +1,31 @@
+package com.BasichandsOn;
+
+import java.util.Scanner;
+
+public class calculator {
+
+		Scanner s=new Scanner(System.in);
+		void add() {
+			int a = s.nextInt();
+			int b = s.nextInt();
+			
+			int result=a+b;
+			System.out.println(result);
+		}
+		
+		void sub(int a,int b) {
+			int result=a-b;
+			System.out.println(result);
+		}
+		
+		int mul() {
+			int a=s.nextInt();
+			int b=s.nextInt();
+			return a*b;
+		}
+		
+		int div(int a, int b) {
+			return a/b;
+		}
+
+}

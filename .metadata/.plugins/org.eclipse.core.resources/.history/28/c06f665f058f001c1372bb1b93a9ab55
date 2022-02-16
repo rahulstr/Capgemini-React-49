@@ -1,0 +1,16 @@
+package com.BasichandsOn;
+
+import java.util.Scanner;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+
+		calculator calculatorobj= new calculator();
+		calculatorobj.add();
+		calculatorobj.sub(2, 4);
+		calculatorobj.mul();
+		calculatorobj.div(20, 30);
+	}
+
+}
