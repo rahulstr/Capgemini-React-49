@@ -1,0 +1,22 @@
+package capgday2;
+
+public class Inheritance {
+
+	public static void main(String[] args) {
+		Mobile m=new Mobile();
+		apple a=new apple("Apple",8,128,48,"C Type");
+		samsung s= new samsung("Samsung",12,256,64,"Micro USB");
+		a.setBrand("IPhone");
+		a.setPrice(93000);
+		a.setSeller("Amazon");
+		a.setYom(2019);
+		
+		s.setBrand("Galaxy");
+		s.setPrice(72000);
+		s.setSeller("Flipkart");
+		s.setYom(2021);
+		
+		
+	}
+
+}
