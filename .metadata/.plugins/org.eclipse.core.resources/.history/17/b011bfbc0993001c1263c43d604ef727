@@ -11,8 +11,7 @@ public class Strint {
 		int a;
 		a=i+200;
 		
-		System.out.println
-		("Sum of Int i and 200 is :"+a);
+		System.out.println("Sum of Int i and 200 is :"+a);
 	}
 
 }

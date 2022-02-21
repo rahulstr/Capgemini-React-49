@@ -6,13 +6,12 @@ public class Strint {
 		String s="200";
 		int i=Integer.parseInt(s);
 		
-		System.out.println("Integer Value of String s is : "+i);
+		System.out.print("Integer Value of String s is : "+i);
 		
 		int a;
 		a=i+200;
 		
-		System.out.println
-		("Sum of Int i and 200 is :"+a);
+		System.out.print("Sum of Int i and 200 is :"+a);
 	}
 
 }
