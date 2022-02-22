@@ -1,0 +1,57 @@
+package capgday4;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+public class Exceptions {
+
+	public static void main(String args[]) 
+	{
+	
+
+	}
+	
+	public void myException()
+	{
+		
+		int a=10;
+		int b=0;
+		
+		int arr[]=new int[5];
+		
+		String s1="Abc";
+		String s2=s1;
+		String s=null;
+		try
+		{
+			
+			String str="h";
+
+			System.out.println(str.charAt(10));
+			
+			   FileInputStream inputStream=new FileInputStream("D://text.txt");
+				
+			System.out.println(s.toUpperCase());	
+		}
+		catch(NullPointerException myNullPointerexception)
+		{
+			s="hello";
+			System.out.println(s);
+		}
+		
+	
+		catch(FileNotFoundException fileException)
+		{
+		  fileException.printStackTrace();	
+		}
+		catch(IOException io)
+		{
+			
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+}

@@ -1,0 +1,18 @@
+package capgday4;
+
+public class trycatch {
+
+	public static void main(String[] args) {
+		try  
+        {  
+        int data=50/0; //may throw exception   
+        }  
+             // handling the exception  
+        catch(Exception e)  
+        {  
+                  // displaying the custom message  
+            System.out.println("Number can't divided by zero");  
+        }  
+    }  
+      
+}  

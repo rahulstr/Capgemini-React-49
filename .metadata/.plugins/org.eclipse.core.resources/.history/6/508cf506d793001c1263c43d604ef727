@@ -1,0 +1,28 @@
+package capgday4;
+
+import java.util.Scanner;
+
+class OnlyPositiveNumberAllowed extends Exception {
+	public OnlyPositiveNumberAllowed(String msg) {
+		super(msg);
+	}
+}
+
+public class CustmException {
+
+	public static void main(String args[]) {
+		Scanner s = new Scanner(System.in);
+		int num = s.nextInt();
+
+		if (num > 0) {
+			System.out.println(num);
+		} else {
+			try {
+				throw new OnlyPositiveNumberAllowed("Only Positive number are allowed ");
+			} catch (Exception e) {
+				System.err.println(e.getMessage());
+			}
+		}
+	}
+
+}
